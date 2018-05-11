@@ -1,5 +1,7 @@
 ## A/B Testing in React
 
+This repository is
+
 ### Setup
  1. Fork this repository to create a copy on your GitHub account.
  2. Clone the `my-react-app` repository from *your GitHub account* to create a local copy on your computer.
@@ -51,11 +53,7 @@
 
 # 🎉 🙌🏼
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 *This app was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).*
+
+*The approach of using React's lifecycle methods in an A/B testing environment was originally posted on [Hackernoon](https://hackernoon.com/using-optimizely-with-react-redux-99bd510c790f).*
