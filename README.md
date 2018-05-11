@@ -1,6 +1,6 @@
 ## A/B Testing in React
 
-This repository is
+This app showcases a lightweight approach to implementing A/B tests on a React app.
 
 ### Setup
  1. Fork this repository to create a copy on your GitHub account.
