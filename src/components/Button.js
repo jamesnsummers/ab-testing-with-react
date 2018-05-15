@@ -11,16 +11,16 @@ class Button extends Component {
   // runs on page load/reload
   componentDidMount() {
     console.log('COMPONENT DID MOUNT: state = ', this.state);
-    if (window.clearheadHook) {
-      window.clearheadHook();
+    if (window.testingToolHook) {
+      window.testingToolHook();
     }
   }
 
   // runs immediately after component is updated/state changes
   componentDidUpdate() {
     console.log('COMPONENT UDPATE: background red? ', this.state.isBackgroundRed);
-    if (window.clearheadHook) {
-      window.clearheadHook();
+    if (window.testingToolHook) {
+      window.testingToolHook();
     }
   }
 

@@ -24,29 +24,29 @@ This app showcases a lightweight approach to implementing A/B tests on a React a
     // runs immediately after component is updated/state changes
     componentDidUpdate() { }
     ```
-  - Within these functions are a few lines of code that call a global function called `clearheadHook()`
+  - Within these functions are a few lines of code that call a global function called `testingToolHook()`
     ```js
     // Calling this function in each of the lifecycle functions will cause it be run on page load and any time the state changes
     componentDidMount() {
-      if (window.clearheadHook) {
-        window.clearheadHook();
+      if (window.testingToolHook) {
+        window.testingToolHook();
       }
     }
 
     componentDidUpdate() {
-      if (window.clearheadHook) {
-        window.clearheadHook();
+      if (window.testingToolHook) {
+        window.testingToolHook();
       }
     }
     ```
-  - We then define the `clearheadHook()` function in the `test-code.js` file and place all test code within the function
+  - We then define the `testingToolHook()` function in the `test-code.js` file and place all test code within the function
     - *This file simulates the variation JavaScript that would be put into a testing tool*
     ```js
     // test-code.js
-    window.clearheadHook = function() {
+    window.testingToolHook = function() {
       // Test code here
     };
-    // Because we are putting all our test code inside this clearheadHook() function, it will run and persist through all page loads and state changes
+    // Because we are putting all our test code inside this testingToolHook() function, it will run and persist through all page loads and state changes
     ```
 
 ### That's It!
